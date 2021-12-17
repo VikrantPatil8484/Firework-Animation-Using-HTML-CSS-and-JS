@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Fireworks</title>
+    <script src="https://unpkg.com/fireworks-js@latest/dist/fireworks.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        function l() {
+
+            const container = document.querySelector('.fireworks-container')
+            const fireworks = new Fireworks(container, { sound: true, })
+
+            fireworks.start()
+            fireworks.setSize({
+                height: window.innerHeight,
+                width: window.innerWidth
+
+            })
+
+        }
+        alert(" Please this code is just for pratical purpose \nI just decided to try the js library.\n💗💗💗")
+    </script>
+
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+    h1{
+        text-align: center;
+        font-family: cursive;
+        font-size: 50px;
+        font-weight: bold;
+        color: blue;
+    }
+</style>
+
+<body onload="l()">
+    <div class="fireworks-container">
+        <h1><b>Cherish The Moment
+            </b> </h1>
+
+    </div>
+
+</body>
+
+</html>
